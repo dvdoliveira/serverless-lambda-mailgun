@@ -1,10 +1,10 @@
 'use strict';
 
-module.exports.hello = (event, context, callback) => {
+module.exports.sendEmail = (event, context, callback) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'Go Serverless v1.0! Your function executed successfully!',
+      message: 'Simulating sending emails successful.',
       input: event,
     }),
   };

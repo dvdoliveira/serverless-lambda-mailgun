@@ -1,0 +1,5 @@
+{
+  "region": "us-west-2",
+  "MAILGUN_APIKEY": "your-mailgun-api-key-goes-here",
+  "MAILGUN_DOMAIN": "your-mailgun-domain-or-sandbox-domain-goes-here"
+}

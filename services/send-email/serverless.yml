@@ -20,10 +20,16 @@ service: send-email
 provider:
   name: aws
   runtime: nodejs6.10
+  stage: ${self:custom.currentStage}
+  region: ${self:custom.currentRegion}
+  environment:
+    MAILGUN_APIKEY: ${file(./config.${self:custom.currentStage}.json):MAILGUN_APIKEY}
+    MAILGUN_DOMAIN: ${file(./config.${self:custom.currentStage}.json):MAILGUN_DOMAIN}
 
-# you can overwrite defaults here
-#  stage: dev
-#  region: us-east-1
+custom:
+  defaultStage: prod
+  currentStage: ${opt:stage, self:custom.defaultStage}
+  currentRegion: ${file(./config.${self:custom.currentStage}.json):region}
 
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:

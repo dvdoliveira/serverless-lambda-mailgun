@@ -4,3 +4,6 @@ jspm_packages
 
 # Serverless directories
 .serverless
+
+# Sensitive config files
+config.prod.json

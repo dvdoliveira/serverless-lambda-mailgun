@@ -23,7 +23,7 @@ provider:
   stage: ${self:custom.currentStage}
   region: ${self:custom.currentRegion}
   environment:
-    MAILGUN_APIKEY: ${file(./config.${self:custom.currentStage}.json):MAILGUN_APIKEY}
+    MAILGUN_API_KEY: ${file(./config.${self:custom.currentStage}.json):MAILGUN_API_KEY}
     MAILGUN_DOMAIN: ${file(./config.${self:custom.currentStage}.json):MAILGUN_DOMAIN}
 
 custom:

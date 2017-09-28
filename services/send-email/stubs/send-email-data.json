@@ -1,0 +1,18 @@
+{
+  "resource":"/email",
+  "path":"/email",
+  "httpMethod":"POST",
+  "headers":{},
+  "queryStringParameters":null,
+  "pathParameters":null,
+  "stageVariables":null,
+  "requestContext":{
+     "path":"/prod/send_email",
+     "stage":"prod",
+     "requestId":"123",
+     "resourcePath":"/send_email",
+     "httpMethod":"POST"
+  },
+  "body":"{\"to_address\":\"deivide.s.oliveira@gmail.com\", \"subject_text\":\"Lambda Serverless Email Demo using Stubs\"}",
+  "isBase64Encoded":false
+}

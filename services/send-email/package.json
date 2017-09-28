@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/dvdoliveira/serverless-lambda-mailgun/issues"
   },
-  "homepage": "https://github.com/dvdoliveira/serverless-lambda-mailgun#readme"
+  "homepage": "https://github.com/dvdoliveira/serverless-lambda-mailgun#readme",
+  "dependencies": {
+    "mailgun-js": "^0.13.1"
+  }
 }
